@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+    --backround: rgba(85, 214,170, .85);
+
+*, *: :before, *: :after {
+    box-sizing: border-box;
+}
+section {
+    margin: 0 16px;
+  }
+  
+  section.full-screen {
+    margin: 0;
+  }
+body {
+    margin: 0;
+    font-family: roboto;
+    font-weight: 400;
+    background-color: #58287f;
+}
+    nav {
+        position: sticky;
+        top: 0;
+        left: 3;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 3.5rem;
+        background-color: #58287f;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: #89C4E1;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #252ac4;
+        border-bottom: 2px solid;
+      }
+      
+      nav > ul {
+        display: flex;
+        gap: q.9rem;
+        margin-left: auto;
+        margin-right: 16px;
+      }
+      
+      nav > ul > li {
+        display: inline-block;
+      }
+     .mobile > img {
+        height: 32px;
+        width: auto;
+        padding: 8px;
+      }
+      nav > span {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        width: auto;
+        padding: 8px;
+      }
+      .relative-container {
+        position: relative;
+      }
+      .relative-container > img {
+        height: 120px;
+        width: auto;
+        padding: 8px;
+      }
+      
+header {
+  height: 200vh;
+  background-image: url('photo/hero.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  block-size: 600px;
+  background-position: center;
+  display: flex;
+  z-index: 999;
+
+}
+
+h1 {
+    color:#58287f;
+    font-size: 50px;
+    position: absolute;
+  text-align: left;
+  bottom: 40%;
+  left: 20%;
+}
+
+header p {
+  color:#58287f;
+  font-size: auto;
+  position: absolute;
+  bottom: 34%;
+  left: 20%;
+  text-align: left;
+  display: flex;
+}
+header button {
+  color:#58287f;
+  font-size: auto;
+  position: absolute;
+  bottom: 28%;
+  left: 25%;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-weight: bold;
+}
+h2 {
+  font-size: 25px;
+  color:#89C4E1;
+  padding-top: 3%;
+}
+.aboutskingae-grid {
+  color:#89C4E1;
+  width: 100%;
+}
+.aboutskingae-grid h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer {
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: 40% 20% 20% 20%;
+  color:#89C4E1;
+  padding-top: 5%;
+  text-align: left;
+  padding-left: 5%;
+
+  }
+.content{
+  height: 200vh;
+  background-color: #58287f;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: :center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 img {
+    width: 30px;
+    
+  }
+  h1 {
+    font-size:30px;
+    bottom: 55%; 
+    left: 5%;
+  }
+  header p {
+    bottom: 50%; 
+    left: 5%;
+  }
+  header {
+    block-size: 300px;
+  }
+  header button {
+    bottom: 47%;
+    left: 25%;
+  }
+  .aboutskingae-grid h3{
+font-size: 18;
+  }
+  .footer{
+    font-size: 12px;
+    grid-template-columns: 60% 40%;
+  }
+  }
+    
+ @media screen and (min-width: 601px) {
+      .aboutskingae-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 32% 32% 32%;
+      }
+    }
+    footer{
+      font-size: smaller;
+      text-align: center;
+      padding: 3%;
+      color: whitesmoke;
+    }
