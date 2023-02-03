@@ -9,4 +9,4 @@ Assignment for Week 3 - Making a landing web page
 - Using Flex Layout
 - Including dummy Registration Form
 
-Layout:
+Layout: skingae.netlify.app
